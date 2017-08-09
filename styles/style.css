@@ -1,3 +1,6 @@
+html, body {
+  height: 100%; }
+
 * {
   box-sizing: border-box; }
 
@@ -12,10 +15,12 @@ a {
 .wrapper {
   font-family: 'Philosopher', sans-serif;
   font-size: 0;
-  line-height: 1.5; }
+  line-height: 1.5;
+  min-height: 100%;
+  display: flex; }
 
 .container-items {
-  height: 100vh;
+  width: 100%;
   background: #f3efef;
   padding: 20px; }
   .container-items .container-items_wrap {
@@ -83,9 +88,9 @@ a {
       height: 10px;
       position: absolute;
       bottom: 0;
-      -webkit-transition: all 0.35s ease-in-out 0s;
+      -webkit-transition: all 0.3s ease-in-out 0s;
       -webkit-transform: scaleX(0);
-      transition: all 0.5s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
       transform: scaleX(0); }
     .container-items .item-aboutme:hover:after, .container-items .item-socials:hover:after {
       -webkit-transform: scaleX(1);
@@ -96,15 +101,15 @@ a {
       height: 10px;
       position: absolute;
       top: 0;
-      -webkit-transition: all 0.35s ease-in-out 0s;
+      -webkit-transition: all 0.3s ease-in-out 0s;
       -webkit-transform: scaleX(0);
-      transition: all 0.5s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
       transform: scaleX(0); }
     .container-items .item-aboutme:hover:before, .container-items .item-socials:hover:before {
       -webkit-transform: scaleX(1);
       transform: scaleX(1); }
     .container-items .item-aboutme .icon-heart, .container-items .item-socials .icon-heart {
-      transition: 0.5s;
+      transition: 0.3s;
       margin-bottom: 20px;
       font-size: 60px;
       width: 80px;
@@ -117,7 +122,7 @@ a {
       -webkit-animation: enlarge 0.3s infinite;
       animation: enlarge 1s infinite; }
     .container-items .item-aboutme .social-link a, .container-items .item-socials .social-link a {
-      transition: 0.5s;
+      transition: 0.3s;
       align-items: center;
       display: flex;
       justify-content: center;
