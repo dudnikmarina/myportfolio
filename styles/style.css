@@ -1,6 +1,3 @@
-html, body {
-  height: 100%; }
-
 * {
   box-sizing: border-box; }
 
@@ -19,55 +16,57 @@ a {
   font-family: 'Philosopher', sans-serif;
   font-size: 0;
   line-height: 1.5;
-  min-height: 100%;
   display: flex; }
 
 .container-items {
   width: 100%;
-  background: #f3efef;
+  background: #f6ecf5;
   padding: 30px; }
   .container-items .container-items_wrap {
     display: flex;
     height: calc(100% / 3); }
   .container-items .item {
+    height: calc(100vh / 3 - 20px);
     font-weight: bolder;
     font-size: 20px;
     padding: 20px;
     overflow: hidden;
     width: 25%;
-    min-height: 250px;
     display: flex;
     align-items: center;
     justify-content: center; }
   .container-items .item-default {
-    background: #bdafc2; }
+    background: #c0a4cb; }
+  .container-items .item-logo, .container-items .item-contact, .container-items .item-aboutme,
+  .container-items .item-works, .container-items .navbar-toggler {
+    -webkit-tap-highlight-color: transparent; }
   .container-items .item-logo {
-    color: #f3efef;
-    background: #bdafc2; }
+    color: #f6ecf5;
+    background: #c0a4cb; }
     .container-items .item-logo img {
-      max-width: 150px; }
+      max-width: 120px; }
   .container-items .item-pattern {
     background-size: cover;
     background-position: 50% 50%;
     overflow: hidden;
     background-image: url("../images/232792.jpg"); }
   .container-items .item-aboutme, .container-items .item-socials {
-    background: #b884af; }
+    background: #d976c7; }
   .container-items .item-green {
     font-weight: lighter;
     font-family: 'Satisfy', cursive;
     color: #69755a;
-    background: #bcc78e; }
+    background: #d2e193; }
     .container-items .item-green p {
       width: 70%; }
   .container-items .item-contact {
-    background: #a9b59a;
+    background: #99b17a;
     color: #3f4735; }
   .container-items .item-aboutme, .container-items .item-logo, .container-items .item-works, .container-items .item-contact {
     cursor: pointer; }
   .container-items .item-works {
-    background: #7b5774;
-    color: #cbb8c9; }
+    background: #62385b;
+    color: #f6ecf5; }
   .container-items .upnleft {
     align-items: flex-end;
     justify-content: flex-start; }
@@ -94,9 +93,9 @@ a {
       height: 6px;
       position: absolute;
       bottom: 0;
-      -webkit-transition: all 0.8s ease-in-out 0s;
+      -webkit-transition: all 0.4s ease-in-out 0s;
       -webkit-transform: scaleX(0);
-      transition: all 0.8s ease-in-out 0s;
+      transition: all 0.4s ease-in-out 0s;
       transform: scaleX(0); }
     .container-items .item-aboutme:hover:after, .container-items .item-socials:hover:after {
       -webkit-transform: scaleX(2);
@@ -107,15 +106,15 @@ a {
       height: 6px;
       position: absolute;
       top: 0;
-      -webkit-transition: all 0.8s ease-in-out 0s;
+      -webkit-transition: all 0.4s ease-in-out 0s;
       -webkit-transform: scaleX(0);
-      transition: all 0.8s ease-in-out 0s;
+      transition: all 0.4s ease-in-out 0s;
       transform: scaleX(0); }
     .container-items .item-aboutme:hover:before, .container-items .item-socials:hover:before {
       -webkit-transform: scaleX(2);
       transform: scaleX(2); }
     .container-items .item-aboutme .icon-heart, .container-items .item-socials .icon-heart {
-      transition: 0.8s;
+      transition: 0.4s;
       margin-bottom: 20px;
       font-size: 60px;
       width: 80px;
@@ -125,14 +124,14 @@ a {
       justify-content: center; }
     .container-items .item-aboutme:hover .icon-heart, .container-items .item-socials:hover .icon-heart {
       color: #cbb8c9;
-      -webkit-animation: enlarge 0.6s infinite;
-      animation: enlarge 1s infinite; }
+      -webkit-animation: enlarge 0.4s infinite;
+      animation: enlarge 0.6s infinite; }
     .container-items .item-aboutme .social-link a, .container-items .item-socials .social-link a {
-      transition: 0.8s;
+      transition: 0.4s;
       align-items: center;
       display: flex;
       justify-content: center;
-      color: #f3efef;
+      color: #f6ecf5;
       margin: 0 5px;
       background: #62385b;
       width: 1em;
@@ -142,16 +141,16 @@ a {
       .container-items .item-aboutme .social-link a span, .container-items .item-socials .social-link a span {
         font-size: 0.5em; }
     .container-items .item-aboutme:hover .social-link a, .container-items .item-socials:hover .social-link a {
-      background: #f3efef;
+      background: #f6ecf5;
       color: #62385b; }
 
 @keyframes enlarge {
   0% {
-    font-size: 40px; }
+    font-size: 50px; }
   50% {
-    font-size: 60px; }
+    font-size: 70px; }
   100% {
-    font-size: 80px; } }
+    font-size: 60px; } }
 .item-socials p {
   margin-bottom: 35px; }
 .item-socials .social-list {
@@ -165,7 +164,7 @@ a {
   margin-left: -25px;
   z-index: 1;
   border: none;
-  background: #f3efef;
+  background: #f6ecf5;
   cursor: pointer;
   width: 50px;
   height: 50px;
@@ -176,7 +175,7 @@ a {
     padding-top: 25px; }
   .navbar-toggler span {
     display: block;
-    background: #bdafc2;
+    background: #c0a4cb;
     height: 3px;
     width: 60%;
     margin-right: auto;
@@ -192,13 +191,14 @@ a {
   .container-items .item-default {
     display: none; }
   .container-items .item-socials {
-    background: #bdafc2; } }
+    background: #c0a4cb; } }
 /*max-width: 768px*/
 @media (max-width: 768px) {
   .container-items {
     padding: 10px; }
     .container-items .item {
-      width: 50%; }
+      width: 50%;
+      height: calc(100vh / 3 - 6.5px); }
     .container-items .item-logo, .container-items .item-pattern {
       display: none; }
     .container-items .navbar-toggler {
@@ -212,7 +212,7 @@ a {
     .container-items .container-items_wrap .item-logo, .container-items .container-items_wrap .item-pattern {
       display: flex; }
     .container-items .container-items_wrap .item-contact {
-      background: #a9b59a;
+      background: #99b17a;
       color: #3f4735; }
     .container-items .container-items_wrap .upnleft, .container-items .container-items_wrap .downnright {
       text-align: center;
