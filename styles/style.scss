@@ -1,13 +1,12 @@
-@mixin primery{
-  background: #f3efef;
-  padding: 20px;
-}
 $cl-hover: #cbb8c9;
 html, body{
   height: 100%;
 }
 * {
   box-sizing: border-box;
+}
+:focus{
+  outline: none;
 }
 img {
   max-width: 100%;
@@ -30,7 +29,8 @@ a {
     display: flex;
     height: calc(100% / 3);
   }
-  @include primery;
+  background: #f3efef;
+  padding: 30px;
   .item {
     font-weight: bolder;
     font-size: 20px;
@@ -45,11 +45,11 @@ a {
   .item-default {
     background: #bdafc2;
   }
-  .item-logo {
+  .item-logo{
     color: #f3efef;
     background: #bdafc2;
-    span {
-      font-size: 150px;
+    img{
+      max-width: 150px;
     }
   }
   .item-pattern {
@@ -82,11 +82,11 @@ a {
     color: #cbb8c9;
   }
   .upnleft{
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: flex-start;
   }
   .downnright{
-    align-items: flex-end;
+    align-items: flex-start;;
     justify-content: flex-end;
     text-align: right;
   }
@@ -192,9 +192,7 @@ a {
   50% {font-size: 60px}
   100% {font-size: 80px}
 }
-.container{
-@include primery;
-}
+
 .item-socials {
   p{
     margin-bottom: 35px;
@@ -204,9 +202,10 @@ a {
   }
 }
 .navbar-toggler {
+  outline: none;
   position: absolute;
   left: 50%;
-  top: -10px;
+  top: 0;
   margin-left: -25px;
   z-index: 1;
   border: none;
@@ -235,7 +234,7 @@ a {
 }
 
 
-/*max-width: 768px*/
+/*max-width: 991px*/
 @media (max-width: 991px){
   .container-items {
     .container-items_wrap {
@@ -243,18 +242,18 @@ a {
     .item {
       width: 33.3%;
     }
-   .item-default{
+    .item-default {
       display: none;
     }
-    .item-socials{
+    .item-socials {
       background: #bdafc2;
-
     }
   }
 }
 /*max-width: 768px*/
 @media (max-width: 768px) {
   .container-items {
+    padding: 10px;
     .container-items_wrap {
     }
     .item {
@@ -263,9 +262,8 @@ a {
     .item-logo, .item-pattern{
       display: none;
     }
-    .item-contact{
-      background: #b884af;
-      color: #62385b;
+    .navbar-toggler {
+      top: -20px;
     }
   }
 }
@@ -285,6 +283,7 @@ a {
         color: #3f4735;
       }
       .upnleft, .downnright{
+        text-align: center;
         align-items: center;
         justify-content: center;
       }
