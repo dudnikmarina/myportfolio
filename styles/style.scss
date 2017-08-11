@@ -1,7 +1,7 @@
 $cl-hover: #cbb8c9;
 $cl1: #c0a4cb;;
 $cl2: #f6ecf5;
-$cl3: #d976c7;
+$cl3: #c572b6;
 $cl4: #62385b;
 $cl5: #69755a;
 $cl6: #3f4735;
@@ -33,6 +33,7 @@ a {
   .container-items_wrap {
     display: flex;
     height: calc(100% / 3);
+
   }
   background: $cl2;
   padding: 30px;
@@ -168,7 +169,7 @@ a {
       .icon-heart {
         color: $cl-hover;
         -webkit-animation: enlarge 0.4s infinite;
-        animation: enlarge 0.6s infinite;
+        animation: enlarge 0.5s infinite;
       }
     }
     .social-link a{
@@ -198,8 +199,12 @@ a {
 @keyframes enlarge
 {
   0% {font-size: 50px}
-  50% {font-size: 70px}
-  100% {font-size: 60px}
+  50% {font-size: 70px;
+    color: #c4a8cb
+  }
+
+  100% {font-size: 60px
+  }
 }
 
 .item-socials {
@@ -268,6 +273,7 @@ a {
     .item {
       width: 50%;
       height: calc(100vh / 3 - 6.5px);
+      min-height: 200px;
     }
     .item-logo, .item-pattern{
       display: none;
