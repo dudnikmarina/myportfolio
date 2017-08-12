@@ -12,7 +12,7 @@ $('.main-slider').slick({
 /*menu-navbar*/
 $(document).ready(function () {
     $(".navbar-toggler").click(function () {
-        $(".navbar-lin_footer").slideToggle();
+        $(".menu").slideToggle();
     })
 });
 
