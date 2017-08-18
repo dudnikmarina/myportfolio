@@ -337,9 +337,15 @@ a {
     .container-contact .menu a {
       color: #3f4735; }
   .container-contact .item-dark {
-    background: #99b17a; }
+    background: #99b17a;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .container-contact .item-light {
-    background: #e1eaba; }
+    background: #e1eaba;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 /*max-width: 991px*/
 @media (max-width: 991px) {

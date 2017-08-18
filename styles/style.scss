@@ -444,9 +444,15 @@ span{
   }
   .item-dark{
     background: $cl7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .item-light{
     background: #e1eaba;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
 }
