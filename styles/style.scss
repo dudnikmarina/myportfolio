@@ -335,7 +335,7 @@ a {
   left: 50%;
   top: 0;
   margin-left: -25px;
-  z-index: 2;
+  z-index: 5;
   border: none;
   background: $cl2;
   cursor: pointer;
@@ -365,8 +365,8 @@ a {
   position: absolute;
   left: calc(50% - 18vw);
   width: 36vw;
-  z-index: 1;
-  background: rgba(246, 236, 245, 0.89);
+  z-index: 2;
+  background: rgba(246, 236, 245, 0.92);
   text-align: center;
   bottom: 0;
   top: 30px;
@@ -432,7 +432,7 @@ span{
     }
   }
   .menu{
-    background: rgba(242, 244, 237, 0.89);
+    background: rgba(242, 244, 237, 0.92);
     li{
       &:hover{
         background-color: #dee9d0;;
@@ -452,10 +452,96 @@ span{
     background: #e1eaba;
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    position: relative;
+    ul{
+      font-size: 20px;
+      color: #3f4735;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    li{
+      margin-bottom: 50px;
+      span{
+        margin-bottom: 20px;
+      }
+      text-align: center;
+      cursor: pointer;
+      .icon{
+        font-size: 50px;
+        margin-bottom: 20px;
+      }
+    }
   }
-
+  .container-image{
+    background-image: url("../images/green-polygon-wallpaper-1.jpg");
+  }
 }
+.logo-icon{
+  z-index: 1;
+  width: 70px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 90px;
+}
+.container-image{
+  position: absolute;
+  height: 65px;
+  bottom: 0;
+  width: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.container-aboutme{
+  .item-dark{
+    background: #a55096;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .item-light{
+    background: #dfc5dc;
+    display: flex;
+   flex-wrap: wrap;
+    ul{
+      font-size: 20px;
+      color: $cl4;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    li{
+      margin-bottom: 50px;
+      span{
+        margin-bottom: 20px;
+      }
+      text-align: center;
+      cursor: pointer;
+      .icon{
+        font-size: 50px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .container-image{
+    background-image: url("../images/figury-treugolnik-geometriya.jpg");
+  }
+  .box{
+    width: 50%;
+    h1{
+      font-size: 30px;
+      color: #b76b98;
+      font-weight: bold;
+      margin-left: 35px;
+      margin-top: 40px;
+    }
+  }
+}
+
+
 
 
 
@@ -479,6 +565,9 @@ span{
 /*max-width: 768px*/
 @media (max-width: 768px) {
   .container {
+    .item-light, .item-dark{
+      height: calc(100vh - 20px);
+      }
     padding: 10px;
     .container-items {
     }
@@ -505,14 +594,24 @@ span{
       padding-top: 50px;
     }
   }
+  .logo-icon {
+    width: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 60px;
+  }
+  .container-image{
+    height: 40px;
+  }
 }
 /*max-width: 480px*/
 @media (max-width: 480px) {
   .container {
     .item-light, .item-dark{
-      width: 100%;
-      height: calc(100vh - 30px);
-    }
+        width: 100%;
+        height: calc(100vh - 10px);
+      }
     .container-items {
       display: block;
       .item {
@@ -531,7 +630,6 @@ span{
         justify-content: center;
       }
     }
-
   }
 
 }
