@@ -333,6 +333,7 @@ a {
   }
 }
 .menu{
+  top: 10px;
   display: none;
   position: absolute;
   left: calc(50% - 18vw);
@@ -341,7 +342,6 @@ a {
   background: rgba(246, 236, 245, 0.92);
   text-align: center;
   bottom: 0;
-  top: 30px;
   ul{
     width: 100%;
     position: absolute;
@@ -386,7 +386,7 @@ span{
   flex-wrap: wrap;
   .item-light, .item-dark{
     width: 50%;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 20px);
   }
   .item-dark{
     background: $cl1;
@@ -551,7 +551,6 @@ span{
     }
   }
   .menu{
-    top: 10px;
     left: 0;
     width: 100%;
     bottom: -300px;
