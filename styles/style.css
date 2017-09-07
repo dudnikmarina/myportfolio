@@ -21,12 +21,12 @@ a {
 .container {
   width: 100%;
   background: #f6ecf5;
-  padding: 30px; }
+  padding: 10px; }
   .container .container-items {
     display: flex;
     height: calc(100% / 3); }
   .container .item {
-    height: calc(100vh / 3 - 20px);
+    height: calc(100vh / 3 - 7px);
     font-weight: bolder;
     font-size: 20px;
     padding: 20px;
@@ -84,7 +84,8 @@ a {
     position: relative;
     overflow: hidden; }
     .container .item-works p {
-      position: relative; }
+      position: relative;
+      margin-top: 40px; }
     .container .item-works:hover .icon-mouse {
       animation: move 1.8s 1;
       -webkit-animation: move 1.8s 1; }
@@ -100,7 +101,7 @@ a {
       margin-left: -13px; }
     .container .item-works .icon-mouse {
       width: 50px;
-      top: 50px;
+      top: 70px;
       position: absolute; }
   .container .upnleft {
     align-items: flex-end;
@@ -185,25 +186,6 @@ a {
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1; }
 
-@-webkit-keyframes swing {
-  15% {
-    -webkit-transform: translateX(9px);
-    transform: translateX(9px); }
-  30% {
-    -webkit-transform: translateX(-9px);
-    transform: translateX(-9px); }
-  40% {
-    -webkit-transform: translateX(6px);
-    transform: translateX(6px); }
-  50% {
-    -webkit-transform: translateX(-6px);
-    transform: translateX(-6px); }
-  65% {
-    -webkit-transform: translateX(3px);
-    transform: translateX(3px); }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0); } }
 @keyframes swing {
   15% {
     -webkit-transform: translateX(9px);
@@ -250,7 +232,7 @@ a {
   outline: none;
   position: absolute;
   left: 50%;
-  top: 0;
+  top: -20px;
   margin-left: -25px;
   z-index: 5;
   border: none;
@@ -375,7 +357,7 @@ a {
 
 .container-image {
   position: absolute;
-  height: 65px;
+  height: 45px;
   bottom: 0;
   width: 100%;
   background-size: cover;
@@ -427,18 +409,13 @@ a {
     background: #c0a4cb; } }
 /*max-width: 768px*/
 @media (max-width: 768px) {
-  .container {
-    padding: 10px; }
-    .container .item-light, .container .item-dark {
-      height: calc(100vh - 20px); }
-    .container .item {
-      width: 50%;
-      height: calc(100vh / 3 - 6.5px);
-      min-height: 300px; }
-    .container .item-logo, .container .item-pattern {
-      display: none; }
-    .container .navbar-toggler {
-      top: -20px; }
+  .container .item-light, .container .item-dark {
+    height: calc(100vh - 20px); }
+  .container .item {
+    width: 50%;
+    min-height: 300px; }
+  .container .item-logo, .container .item-pattern {
+    display: none; }
 
   .menu {
     top: 10px;
